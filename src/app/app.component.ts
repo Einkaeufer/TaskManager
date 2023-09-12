@@ -61,11 +61,17 @@ export class AppComponent {
   }
 
   editTask(index: number) {
-    this.newTaskName = this.tasks[index].name;
-    this.newTaskDescription = this.tasks[index].description;
+    this.editingIndex = index;
+    const task = this.tasks[index];
+    this.newTaskName = task.name;
+    this.newTaskDescription = task.description;
+    this.newTaskDueDate = task.dueDate;
+    this.newTaskTag = task.tag;
+    this.customTag = task.tag && !this.predefinedTags.some(t => t.name === task.tag) ? task.tag : '';
+    this.showCustomTagInput = !!this.customTag;
     this.showModal = true;
-    this.editingIndex = index; // Speichern Sie den Index des zu bearbeitenden Tasks
   }
+
 
   toggleTaskStatus(task: any) {
     task.completed = !task.completed;
