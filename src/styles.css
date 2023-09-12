@@ -1,8 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+/* Adding Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
+/* Global styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
+}
+
+/* Header styles */
+.app-header {
+  background-color: #343a40;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Dancing Script', cursive;
+  text-align: center; /* Zentriert den Text im Header */
+}
+
+.app-header .navbar-brand {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #f8f9fa;
+  display: inline-block; /* Ermöglicht die vertikale Ausrichtung */
+  margin: 0 auto; /* Zentriert den Block im Header */
+}
+
+/* Footer styles */
+.app-footer {
+  background-color: #343a40;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  font-family: 'Dancing Script', cursive;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+.app-footer a {
+  font-size: 1.5rem;
+}
+
+
+
+/* (Hier kommt der vorhandene Inhalt Ihrer styles.css Datei) */
+
+.task-board-title {
+  font-family: 'Dancing Script', cursive;
 }
 
 .completed-task {
