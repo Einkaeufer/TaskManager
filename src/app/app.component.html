@@ -14,13 +14,17 @@
     </div>
 
     <!-- Task Cards -->
-    <!-- Task Cards -->
     <div class="col-md-4 mb-4" *ngFor="let task of tasks; let i = index">
       <div class="card task-card" [ngClass]="{'faded-task': task.completed}" (click)="editTask(i)">
         <div class="card-body">
           <div class="d-flex justify-content-between">
             <h5 class="card-title">{{ task.name | slice:0:25 }}{{ task.name.length > 25 ? '...' : '' }}</h5>
             <i *ngIf="isTaskOverdue(task)" class="fas fa-exclamation-circle text-danger overdue-icon" title="Fälligkeitsdatum überschritten!"></i>
+            <i class="fas fa-tag tag-icon"
+               [ngStyle]="{'color': getTagColor(task.tag)}"
+               *ngIf="task.tag"
+               [title]="task.tag">
+            </i>
             <i *ngIf="!task.completed" class="far fa-circle task-checkbox-icon" (click)="toggleTaskStatus(task); $event.stopPropagation();" title="Task erledigt"></i>
             <i *ngIf="task.completed" class="fas fa-check-circle text-success task-checkbox-icon" (click)="toggleTaskStatus(task); $event.stopPropagation();" title="Task erledigt"></i>
           </div>
@@ -29,6 +33,7 @@
         </div>
       </div>
     </div>
+
 
   </div>
 
@@ -49,6 +54,14 @@
           <textarea class="form-control" placeholder="Beschreibung" [(ngModel)]="newTaskDescription"></textarea>
           <label><strong>Fälligkeitsdatum:</strong></label>
           <input type="date" class="form-control mb-3" [(ngModel)]="newTaskDueDate">
+
+          <label><strong>Tag:</strong></label>
+          <select class="form-control mb-3" [(ngModel)]="newTaskTag" (change)="onTagChange($event)">
+            <option disabled value="" selected>Tag hinzufügen</option>
+            <option *ngFor="let tag of predefinedTags" [ngValue]="tag.name">{{ tag.name }}</option>
+            <option value="custom">Eigener Tag...</option>
+          </select>
+          <input *ngIf="showCustomTagInput" type="text" class="form-control mb-3" placeholder="Eigener Tag" [(ngModel)]="customTag">
         </div>
         <div class="modal-footer">
           <button *ngIf="editingIndex !== null" type="button" class="btn btn-danger" (click)="deleteTask(tasks[editingIndex]); closeModal();">Löschen</button>
