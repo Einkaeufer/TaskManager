@@ -30,7 +30,6 @@ export class IntroductionComponent implements OnInit {
     }
   }
 
-
   nextStep(): void {
     if (this.currentStep < this.step4) {
       this.currentStep++;
