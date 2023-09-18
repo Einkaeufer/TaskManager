@@ -1,27 +1,46 @@
 # TaskManager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+TaskManager ist eine Angular-basierte Webanwendung zur Verwaltung Ihrer täglichen Aufgaben. Mit einer benutzerfreundlichen Oberfläche und einfacher Navigation ermöglicht TaskManager eine effiziente Aufgabenverwaltung.
 
-## Development server
+## Inhaltsverzeichnis
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Funktionen](#funktionen)
+- [Technologien](#technologien)
+- [Installation](#installation)
 
-## Code scaffolding
+## Funktionen
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Aufgaben hinzufügen, bearbeiten und löschen
+- Übersicht über alle Aufgaben
+- Einführungstutorial für neue Benutzer
+- Benutzerfreundliche Oberfläche
+- (Weitere Funktionen, die spezifisch für das Projekt sind)
 
-## Build
+## Technologien
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Angular](https://angular.io/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Um das Projekt lokal zu installieren und auszuführen, folgen Sie diesen Schritten:
 
-## Running end-to-end tests
+1. Klone das Repository: `https://github.com/Einkaeufer/TaskManager`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Navigieren Sie in das Projektverzeichnis: cd TaskManager
 
-## Further help
+3. Installieren Sie die notwendigen Pakete: npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Starten Sie die Anwendung: ng serve
+
+5. Öffnen Sie Ihren Browser und besuchen Sie `http://localhost:YourPort/` um die Anwendung zu verwenden.
+
+## Komponentendiagram
+
+![bP71IWGn38RlUOewzva7y22xoE95FSY-G6ZZEcwRbabwqdrtYo85YIoTmxIGVFdp_zs9ugOrHO2RGAyhativt1_tpm-F1-SZYW0Kz6SyaPkEAESdv7RVt9vFDM8xIvdS1xZsTN32KfQKGusqgFpMBzz_gzNdL38JwzNkbNLhSxskcGUmij6Fkp1hCo7BksGUsUjDKnpfzp9kfEiCWORW1](https://github.com/Einkaeufer/TaskManager/assets/104210524/b323338e-edff-4e32-b557-dec3cefd94b2)
+
+## Kontakt
+
+- Marc Ryter - mryter@online-gibz.ch
+- Projekt-Link: https://github.com/Einkaeufer/TaskManager
+
