@@ -14,7 +14,6 @@ TaskManager ist eine Angular-basierte Webanwendung zur Verwaltung Ihrer täglich
 - Übersicht über alle Aufgaben
 - Einführungstutorial für neue Benutzer
 - Benutzerfreundliche Oberfläche
-- (Weitere Funktionen, die spezifisch für das Projekt sind)
 
 ## Technologien
 
