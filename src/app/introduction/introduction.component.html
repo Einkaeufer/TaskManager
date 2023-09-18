@@ -1,0 +1,68 @@
+<div class="overlay"></div>
+<div class="introduction-modal">
+  <ng-container *ngIf="currentStep === step1">
+    <h2>Willkommen bei "TaskManager"</h2>
+    <div class="navigation-buttons">
+      <div class="step-indicators">
+        <span [class.active]="currentStep === step1"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="button-group">
+        <button (click)="nextStep()">Starten</button>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="currentStep === step2">
+    <i class="fas fa-check-square"></i>
+    Schritt 1: Erstellen Sie eine neue Aufgabe, indem Sie die notwendigen Details in die entsprechenden Felder eingeben.
+    <div class="navigation-buttons">
+      <div class="step-indicators">
+        <span></span>
+        <span [class.active]="currentStep === step2"></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="button-group">
+        <button (click)="prevStep()">Zurück</button>
+        <button (click)="nextStep()">Weiter</button>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="currentStep === step3">
+    <i class="fas fa-tags"></i>
+    Schritt 2: Fügen Sie Tags zu Ihren Aufgaben hinzu, um sie leicht zu kategorisieren.
+    <div class="navigation-buttons">
+      <div class="step-indicators">
+        <span></span>
+        <span></span>
+        <span [class.active]="currentStep === step3"></span>
+        <span></span>
+      </div>
+      <div class="button-group">
+        <button (click)="prevStep()">Zurück</button>
+        <button (click)="nextStep()">Weiter</button>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="currentStep === step4">
+    <i class="fas fa-exclamation-triangle"></i>
+    Schritt 3: Behalten Sie den Überblick über fällige Aufgaben und markieren Sie sie als erledigt, wenn sie abgeschlossen sind.
+    <div class="navigation-buttons">
+      <div class="step-indicators">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span [class.active]="currentStep === step4"></span>
+      </div>
+      <div class="button-group">
+        <button (click)="prevStep()">Zurück</button>
+        <button (click)="closeIntroduction()">Los geht's!</button>
+      </div>
+    </div>
+  </ng-container>
+</div>

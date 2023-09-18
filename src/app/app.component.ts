@@ -14,6 +14,12 @@ export class AppComponent {
   editingIndex: number | null = null; // null bedeutet, dass kein Task bearbeitet wird
   title = 'TaskManager';
 
+  introductionSeen: boolean = false; // Neue Eigenschaft zur Überprüfung des Einführungsfensters
+
+  ngOnInit(): void {
+    this.introductionSeen = localStorage.getItem('introductionSeen') === 'true';
+  }
+
   addNewTask() {
     if (this.newTaskName.trim()) {
       const newTask = {
@@ -114,4 +120,6 @@ export class AppComponent {
     }
     return '#D3D3D3'; // Light gray for no tag
   }
+
+
 }
