@@ -37,7 +37,8 @@ Um das Projekt lokal zu installieren und auszuführen, folgen Sie diesen Schritt
 
 ## Komponentendiagram
 
-![bP71IWGn38RlUOewzva7y22xoE95FSY-G6ZZEcwRbabwqdrtYo85YIoTmxIGVFdp_zs9ugOrHO2RGAyhativt1_tpm-F1-SZYW0Kz6SyaPkEAESdv7RVt9vFDM8xIvdS1xZsTN32KfQKGusqgFpMBzz_gzNdL38JwzNkbNLhSxskcGUmij6Fkp1hCo7BksGUsUjDKnpfzp9kfEiCWORW1](https://github.com/Einkaeufer/TaskManager/assets/104210524/b323338e-edff-4e32-b557-dec3cefd94b2)
+![bP71IWGn38RlUOewzva7y22xoE95FSY-G6ZZEcwRbabwqdrtYo85YIoTmxIGVFdp_zs9ugOrHO2RGAyhativt1_tpm-F1-SZYW0Kz6SyaPkEAESdv7RVt9vFDM8xIvdS1xZsTN32KfQKGusqgFpMBzz_gzNdL38JwzNkbNLhSxskcGUmij6Fkp1hCo7BksGUsUjDKnpfzp9kfEiCWORW1](https://github.com/Einkaeufer/TaskManager/assets/104210524/f5fd3265-f0ef-4da0-be6e-1b4bd6032ae2)
+
 
 ## Designwahl
 
