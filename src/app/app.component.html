@@ -1,4 +1,3 @@
-<!-- Header -->
 <header class="app-header">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">TaskManager</a>
@@ -8,12 +7,7 @@
 <app-introduction *ngIf="!introductionSeen"></app-introduction>
 
 <div class="container mt-5">
-  <!-- <h1 class="mb-4 text-center task-board-title">My Task Board</h1> -->
-
-  <!-- Grid system for cards -->
   <div class="row">
-
-    <!-- Special Add Task Card -->
     <div class="col-md-4 mb-4">
       <div class="card task-card add-task-card text-center" (click)="showModal=true">
         <div class="card-body">
@@ -21,8 +15,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Task Cards -->
     <div class="col-md-4 mb-4" *ngFor="let task of tasks; let i = index">
       <div class="card task-card" [ngClass]="{'faded-task': task.completed}" (click)="editTask(i)">
         <div class="card-body">
@@ -42,11 +34,8 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
-  <!-- Modal for adding/editing tasks -->
   <div class="modal" [class.show]="showModal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -63,7 +52,6 @@
           <textarea class="form-control" placeholder="Beschreibung" [(ngModel)]="newTaskDescription"></textarea>
           <label><strong>Fälligkeitsdatum:</strong></label>
           <input type="date" class="form-control mb-3" [(ngModel)]="newTaskDueDate">
-
           <label><strong>Tag:</strong></label>
           <select class="form-control mb-3" [(ngModel)]="newTaskTag" (change)="onTagChange($event)">
             <option disabled value="" selected>Tag hinzufügen</option>
@@ -81,7 +69,7 @@
     </div>
   </div>
 </div>
-<!-- Footer -->
+
 <footer class="app-footer bg-dark text-white text-center py-3">
   <div class="container">
     <p>&copy; 2023 TaskManager by Marc Ryter</p>

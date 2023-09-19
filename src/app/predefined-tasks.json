@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Weltherrschaft planen",
+    "description": "Es ist an der Zeit, die Weltherrschaft zu übernehmen. Erstelle einen detaillierten Plan.",
+    "dueDate": "2023-10-01",
+    "tag": "Freizeit",
+    "completed": false
+  },
+  {
+    "name": "Ein Einhorn adoptieren",
+    "description": "Finde ein Einhorn und adoptiere es. Einhörner sind tolle Haustiere.",
+    "dueDate": "2023-09-17",
+    "tag": "Familie",
+    "completed": false
+  },
+  {
+    "name": "Mit Aliens kommunizieren",
+    "description": "Baue ein Gerät, um mit Aliens zu kommunizieren. Vielleicht sind sie freundlich!",
+    "dueDate": "2023-12-31",
+    "tag": "Arbeit",
+    "completed": false
+  },
+  {
+    "name": "Einen Vulkan erkunden",
+    "description": "Reise zu einem aktiven Vulkan und erkunde ihn. Vergiss nicht, ein paar Fotos zu machen!",
+    "dueDate": "2024-01-15",
+    "tag": "Abenteuer",
+    "completed": false
+  }
+]
